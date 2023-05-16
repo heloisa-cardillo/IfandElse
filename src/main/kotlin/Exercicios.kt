@@ -110,7 +110,62 @@ fun main(args: Array<String>) {
             "Data invalida"
         })
 
+    //Exercicio 19
+    val par= 2
+    val impar= 3
+    val positivo= 0
+    val negativo = -1
+    var parouimpar = "saber se é par ou impar"
+    var positivoounegativo = "saber se é positivo ou negativo"
 
+
+    when (parouimpar) {
+        if (par%2 ==0){
+            println("par")
+        }else{
+            println("impar")
+        }.toString()}
+
+
+    when(positivoounegativo) {
+        if (positivo>=0){
+            ("positivo")
+        }else{
+            ("negativo")}
+    }
+
+//Exercicio 20
+//Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
+//O resultado da operação deve ser acompanhado de uma frase que diga se o número e:
+//Par ou ímpar;
+//Positivo ou negativo;
+    val v1= "Sim".toInt(1)
+    val v2= "Nao".toInt(0)
+    val v3= "Sim".toInt(1)
+    val v4= "Nao".toInt(0)
+    val v5= "Sim".toInt(1)
+
+
+    var total = v1+v2+v3+v4+v5
+
+
+    val message = when (total) {
+        2 -> "Suspeita"
+        3,4 ->"Cumplice"
+        5 -> "Assassino"
+        else -> "Inocente"}
+
+
+// Ou
+}
+if (total ==2){
+    println("Suspeita")
+} else  if (total==3 || total ==4) {
+    println("Cumplice")
+}else if (total ==5) {
+    println("Assassino")
+}else {
+    "Inocente"}
 
 
 
