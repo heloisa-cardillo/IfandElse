@@ -109,8 +109,11 @@ fun main(args: Array<String>) {
         } else {
             "Data invalida"
         })
-
-    //Exercicio 19
+     //Exercicio 19
+     // Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
+     //O resultado da operação deve ser acompanhado de uma frase que diga se o número e:
+     //Par ou ímpar;
+     //Positivo ou negativo;
     val par= 2
     val impar= 3
     val positivo= 0
@@ -134,11 +137,18 @@ fun main(args: Array<String>) {
             ("negativo")}
     }
 
-//Exercicio 20
-//Faça um Programa que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar.
-//O resultado da operação deve ser acompanhado de uma frase que diga se o número e:
-//Par ou ímpar;
-//Positivo ou negativo;
+    //Exercicio 20
+    //Faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+    //
+    //“Telefonou para a vítima? “
+    //“Esteve no local do crime?”
+    //“Mora perto da vítima? “
+    //“Devia para a vítima? “
+    //“Já trabalhou com a vítima? “
+    //O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
+    // Se a pessoa responder positivamente a 2 questões ela deve ser classificada como “Suspeita”, entre 3 e 4 como “Cúmplice” e 5 como “Assassino“.
+    // Caso contrário, ele será classificado como “Inocente“.
+
     val v1= "Sim".toInt(1)
     val v2= "Nao".toInt(0)
     val v3= "Sim".toInt(1)
@@ -166,6 +176,7 @@ if (total ==2){
     println("Assassino")
 }else {
     "Inocente"}
+
 
 
 
