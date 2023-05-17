@@ -34,12 +34,13 @@ fun main(args: Array<String>) {
     //Exercicio 4
     var n5 = "a"
     println(
-        if (n5 == "a" || n5 == "e" || n5 == "i" || n5 == "o" || n5 == "u") {
+        if (listOf("a","e","i","o","u").contains(n5)) {
             "Vogal"
         } else {
             "Consoante"
         }
     )
+    //n5 == "a" || n5 == "e" || n5 == "i" || n5 == "o" || n5 == "u"
 
     //Exercicio 5
     val nota1 = 4;
@@ -59,19 +60,17 @@ fun main(args: Array<String>) {
     //Exercicio 8
     // Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar,
     // sabendo que a decisão é sempre o mais barato.
-    val produto1 = 10.00
-    val produto2 = 15.00
+    val produto1 = 15.00
+    val produto2 = 10.00
     val produto3 = 20.00
-    val produto4 = 25.00
+
 
     var valorproduto = produto3
     println(
-        if (produto1 < produto2 && produto1 < produto3 && produto1 < produto4) {
+        if (produto1 < produto2 && produto1 < produto3 ) {
             "Comprar produto 1"
-        } else if (produto2 < produto1 && produto2 < produto3 && produto2 < produto4) {
+        } else if (produto2 < produto3) {
             "Comprar produto 2"
-        } else if (produto3 < produto1 && produto3 < produto2) {
-            "Comprar produto 3"
         } else {
             "Comprar produto 3"
         }
@@ -122,19 +121,26 @@ fun main(args: Array<String>) {
     var positivoounegativo = "saber se é positivo ou negativo"
 
 
-    when (parouimpar) {
-        if (par%2 ==0){
+    when {
+        par%2 ==0 ->
             println("par")
-        }else{
-            println("impar")
-        }.toString()}
+        else ->
+            println("impar")}
 
 
-    when(positivoounegativo) {
-        if (positivo>=0){
-            ("positivo")
-        }else{
-            ("negativo")}
+    when {
+        positivo>=0 ->
+          println ("positivo")
+        else ->
+         println ("negativo")
+    }
+
+    var numero=0
+    when (numero){
+        0 -> println("zero")
+        1 -> println("um")
+        2 -> println("dois")
+        3 -> println("tres")
     }
 
     //Exercicio 20
@@ -149,11 +155,11 @@ fun main(args: Array<String>) {
     // Se a pessoa responder positivamente a 2 questões ela deve ser classificada como “Suspeita”, entre 3 e 4 como “Cúmplice” e 5 como “Assassino“.
     // Caso contrário, ele será classificado como “Inocente“.
 
-    val v1= "Sim".toInt(1)
-    val v2= "Nao".toInt(0)
-    val v3= "Sim".toInt(1)
-    val v4= "Nao".toInt(0)
-    val v5= "Sim".toInt(1)
+    val v1= "Sim".let {1}
+    val v2= "Nao".let {0}
+    val v3= "Sim".let {1}
+    val v4= "Nao".let {0}
+    val v5= "Sim".let {1}
 
 
     var total = v1+v2+v3+v4+v5
@@ -164,21 +170,7 @@ fun main(args: Array<String>) {
         3,4 ->"Cumplice"
         5 -> "Assassino"
         else -> "Inocente"}
-
-
-// Ou
-}
-if (total ==2){
-    println("Suspeita")
-} else  if (total==3 || total ==4) {
-    println("Cumplice")
-}else if (total ==5) {
-    println("Assassino")
-}else {
-    "Inocente"}
-
-
-
+    println(message)
 
 
     //Exercicio 22
@@ -196,9 +188,11 @@ if (total ==2){
     val raio = 10
     var diametro = 2*raio
     var comprimento = 2*3.14*raio
-    //var area = 3.14*(raio) - como coloca um numero elevado a alguma coisa? (a = π r²)
+    var area = 3.14*(raio*raio)
     println("Diamentro:$diametro")
     println("Comprimento:$comprimento")
+    println ("Area:$area")
+
 
     //Exercicio 26
     val idadesangue = 20
