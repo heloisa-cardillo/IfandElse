@@ -114,11 +114,7 @@ fun main(args: Array<String>) {
      //Par ou ímpar;
      //Positivo ou negativo;
     val par= 2
-    val impar= 3
     val positivo= 0
-    val negativo = -1
-    var parouimpar = "saber se é par ou impar"
-    var positivoounegativo = "saber se é positivo ou negativo"
 
 
     when {
